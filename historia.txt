@@ -48,3 +48,20 @@ git push
 git fetch
 git merge
 git pull
+
+**Introducción a las ramas o branches de Git**
+Antes de comenzar a aprender sobre el uso de ramas, primero hagamos cambios a nuestros archivos.
+Después de haber cambiado podemos hacer commit con nuevos argumentos:
+
+git commit -a (Se hace commit a los archivos existentes y que tengan cambios)
+git commit -am (Se junta la función de git commit -a y -m)
+
+¿Cómo creamos ramas?
+Es importante mencionar que las ramas se crean en el lugar donde nos encontramos, podemos verlo con git status.
+Para crear una rama en Git utilizamos el comando git branch (nombre de la rama).
+Para cambiarnos de una rama a otra utilizamos git checkout (nombre de la rama).
+
+git branch (nombre de la rama)
+git checkout (nombre de la rama)
+
+--Recordemos que en VIM podemos salir y guardar con esc shift z z.
