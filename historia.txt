@@ -18,3 +18,5 @@ git diff hashVersion hashVersion
 Con estos comandos, Ariel ya sabe inicializar Git, agregar archivos al repositorio, revisar el estado de Git y guardar cambios.
 
 Con git log y git diff, Ariel ya puede revisar el historial dentro de Git o revisar las diferencias entre dos versiones.
+
+Ahora, está aprendiendo el comando git reset hashSHA-1 --hard/--soft para volver en el tiempo.
