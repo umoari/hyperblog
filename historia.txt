@@ -69,8 +69,13 @@ git checkout (nombre de la rama)
 --Tambien es importante recordar que cada vez que nos cambiamos de una rama a otra, el archivo se queda en la versión HEAD de cada rama.
 
 **Fusion de ramas con Git merge**
-Seguimos con nuestro repositorio de trabajo. Vamos a hacer algunos cambios a index.html dentro de la rama master.
-Después vamos a hacer algunos cambios de index.html y styles.css dentro de la rama cabecera.
-Tras haber hecho esto, vamos a unirlos a ver qué pasa con nuestros archivos.
+Seguimos trabajando con el uso de ramas. Esta vez vamos a hacer algunos cambios a index.html y styles.css dentro de nuestra rama cabecera.
+Cada vez que cambiemos de rama es importante guardar los cambios y hacer un commit para no perderlos.
+Guardamos los cambios, hacemos git commit -am "Mensajito" y se guarda el commit.
+Ahora, nos cambiamos a la rama master con git checkout master.
+Aparentemente se pierden los cambios, pero lo que en realidad pasa es que se muestra la versión head de cada rama cuando hacemos git checkout (nombre de la rama).
 
---Es importante señalar que cuando usamos git merge la rama desaparece y se integra a la rama principal. Más adelante podemos desglosar más ramas a master y seguir haciendo merge.
+Ahora hacemos algunos cambios de contenido en index.html. Agregamos un párrafo con <p>.
+Y en styles.css cambiamos el tipo de fuente a "Courier".
+Guardamos los cambios con git commit -am "Mensajito".
+Una vez guardados los cambios y hecho el commit podemos cambiarnos de rama con git checkout cabecera.
