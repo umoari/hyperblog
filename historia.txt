@@ -65,3 +65,12 @@ git branch (nombre de la rama)
 git checkout (nombre de la rama)
 
 --Recordemos que en VIM podemos salir y guardar con esc shift z z.
+
+--Tambien es importante recordar que cada vez que nos cambiamos de una rama a otra, el archivo se queda en la versión HEAD de cada rama.
+
+**Fusion de ramas con Git merge**
+Seguimos con nuestro repositorio de trabajo. Vamos a hacer algunos cambios a index.html dentro de la rama master.
+Después vamos a hacer algunos cambios de index.html y styles.css dentro de la rama cabecera.
+Tras haber hecho esto, vamos a unirlos a ver qué pasa con nuestros archivos.
+
+--Es importante señalar que cuando usamos git merge la rama desaparece y se integra a la rama principal. Más adelante podemos desglosar más ramas a master y seguir haciendo merge.
