@@ -21,3 +21,5 @@ Con estos comandos, Ariel ya sabe inicializar Git, agregar archivos al repositor
 Con git log y git diff, Ariel ya puede revisar el historial dentro de Git o revisar las diferencias entre dos versiones.
 
 Ahora, está aprendiendo el comando git reset hashSHA-1 --hard/--soft para volver en el tiempo.
+
+Cuando en la pantalla hay mas cambios que los que caben en la ventana, podemos salirnos del listado con Q.
