@@ -5,3 +5,11 @@ Ariel empezó a estudiar en Platzi hace dos meses y ha terminado algunos cursos 
 En Junio, tras haber terminado el curso de Responsive Design, ahora se adentra en el maravilloso mundo de Git.
 
 Al principio, se sentía intimidado por un software del que no sabía nada, pero poco a poco comenzó a entenderlo mejor.
+
+Ya ha practicado mucho algunos comandos de Git, son muchos (como los pokemones), hasta ahora ya sabe usar:
+git init
+git add
+git status
+git commit
+git log
+git diff
