@@ -1,3 +1,7 @@
 Esta es la historia de Ariel Ureña por el mundo de la programación.
 
 Ariel empezó a estudiar en Platzi hace dos meses y ha terminado algunos cursos hasta la fecha.
+
+En Junio, tras haber terminado el curso de Responsive Design, ahora se adentra en el maravilloso mundo de Git.
+
+Al principio, se sentía intimidado por un software del que no sabía nada, pero poco a poco comenzó a entenderlo mejor.
