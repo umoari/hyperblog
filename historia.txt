@@ -13,6 +13,7 @@ git add *. para agregar todos los archivos dentro de la carpeta
 git status
 git commit
 git log
+git log --stat (muestra los stats de los cambios hechos)
 git diff hashVersion hashVersion
 
 Con estos comandos, Ariel ya sabe inicializar Git, agregar archivos al repositorio, revisar el estado de Git y guardar cambios.
