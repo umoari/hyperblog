@@ -53,8 +53,8 @@ git pull
 Antes de comenzar a aprender sobre el uso de ramas, primero hagamos cambios a nuestros archivos.
 Después de haber cambiado podemos hacer commit con nuevos argumentos:
 
-git commit -a (Se hace commit a los archivos existentes y que tengan cambios)
-git commit -am (Se junta la función de git commit -a y -m)
+git commit -a (Se trackean archivos con cambios realizados y se les hace commit)
+git commit -am (Junta la función de git commit -a y -m)
 
 ¿Cómo creamos ramas?
 Es importante mencionar que las ramas se crean en el lugar donde nos encontramos, podemos verlo con git status.
@@ -79,3 +79,11 @@ Ahora hacemos algunos cambios de contenido en index.html. Agregamos un párrafo 
 Y en styles.css cambiamos el tipo de fuente a "Courier".
 Guardamos los cambios con git commit -am "Mensajito".
 Una vez guardados los cambios y hecho el commit podemos cambiarnos de rama con git checkout cabecera.
+
+La fusión de ramas se realiza desde la rama donde uno se encuentra. Si estoy en master se va a unir el contenido de cabecera a master y desaparece la rama cabecera.
+Un merge funciona como un commit, pues se agregan los cambios de la versión head de la rama indicada en el comando.
+
+git branch (muestra un listado de las ramas que tiene nuestro repositorio y en verde la rama en la que nos encontramos)
+git merge nombreRama (fusiona la rama indicada por su nombre a la rama donde nos encontramos)
+
+--Por ahora, los cambios no ocasionaron ningún conflicto, pero eso lo veremos en la siguiente clase.
