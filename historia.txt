@@ -7,9 +7,14 @@ En Junio, tras haber terminado el curso de Responsive Design, ahora se adentra e
 Al principio, se sentía intimidado por un software del que no sabía nada, pero poco a poco comenzó a entenderlo mejor.
 
 Ya ha practicado mucho algunos comandos de Git, son muchos (como los pokemones), hasta ahora ya sabe usar:
-git init
-git add
+git init *dentro de nuestra carpeta de trabajo
+git add *nombreArchivo.extension 
+git add *. para agregar todos los archivos dentro de la carpeta
 git status
 git commit
 git log
-git diff
+git diff hashVersion hashVersion
+
+Con estos comandos, Ariel ya sabe inicializar Git, agregar archivos al repositorio, revisar el estado de Git y guardar cambios.
+
+Con git log y git diff, Ariel ya puede revisar el historial dentro de Git o revisar las diferencias entre dos versiones.
