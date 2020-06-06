@@ -31,3 +31,20 @@ Con git checkout hashSHA-1 archivo.extension se puede visualizar el archivo en u
 Si se quiere volver a la versión más actualizada, se puede utilizar git checkout master archivo.extension.
 
 Cuando en la pantalla hay mas cambios que los que caben en la ventana, podemos salirnos del listado con Q.
+
+**Fljo de trabajo con Git**
+Ya vimos que para trabajar con Git de manera local tenemos 3 áreas: nuestro directorio de trabajo, nuestra área de staging y nuestro repositorio local.
+De forma local, el fluo de trabajo es agregar un archivo a staging con git add y luego guardar los cambios con git commit.
+
+De forma remota, el flujo de trabajo no es muy diferente. Primero hay que clonar el repositorio de trabajo con git clone url.
+Una vez clonado el repositorio, tenemos en nuestro equipo local el directorio de trabajo, el área de staging y el repositorio local.
+El flujo de trabajo es muy parecido: agregamos archivos a staging con git add, los guardamos con git commit y luego los enviamos al repositorio remoto con git push.
+git fetch copia a nuestro repositorio local las actualizaciones de la base de datos del repositorio remoto.
+git merge copia a nuestro repositorio local los archivos actualizados del servidor remoto.
+git pull cumple con las funciones de git fetch y git pull al mismo tiempo.
+
+git clone url
+git push
+git fetch
+git merge
+git pull
