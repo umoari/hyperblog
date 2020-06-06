@@ -12,14 +12,22 @@ git add *nombreArchivo.extension
 git add *. para agregar todos los archivos dentro de la carpeta
 git status
 git commit
+
 git log
 git log --stat (muestra los stats de los cambios hechos)
 git diff hashVersion hashVersion
 
+git reset hashSHA-1 --hard/--soft (para volver a una version anterior)
+git checkout hashSHA-1 archivo.extension (visualizar una version segun su hashSHA-1)
+git checkout master archivo.extension (volver a la version mas actualizada del archivo)
+
 Con estos comandos, Ariel ya sabe inicializar Git, agregar archivos al repositorio, revisar el estado de Git y guardar cambios.
 
-Con git log y git diff, Ariel ya puede revisar el historial dentro de Git o revisar las diferencias entre dos versiones.
+Con git log y log --stat, Ariel ya aprendio a  revisar el historial dentro de Git y ver las estadisticas de los cambios.
+Con git diff hashVersion hashVersion, Ariel aprendió a visualizar las diferencias entre dos versiones.
 
-Ahora, está aprendiendo el comando git reset hashSHA-1 --hard/--soft para volver en el tiempo.
+Ahora, está aprendiendo el comando git reset hashSHA-1 --hard/--soft para volver a una versión anterior dentro del repositorio según el hash SHA-1 designado.
+Con git checkout hashSHA-1 archivo.extension se puede visualizar el archivo en una de sus versiones anteriores según el hash SHA-1 seleccionado, sólo se regresa a la versión pero no se guardan los cambios.
+Si se quiere volver a la versión más actualizada, se puede utilizar git checkout master archivo.extension.
 
 Cuando en la pantalla hay mas cambios que los que caben en la ventana, podemos salirnos del listado con Q.
