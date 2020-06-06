@@ -87,3 +87,19 @@ git branch (muestra un listado de las ramas que tiene nuestro repositorio y en v
 git merge nombreRama (fusiona la rama indicada por su nombre a la rama donde nos encontramos)
 
 --Por ahora, los cambios no ocasionaron ningún conflicto, pero eso lo veremos en la siguiente clase.
+
+**Solucion de conflictos al hacer un merge**
+En ocasaiones, como en la clase anterior, se pueden fusionar ramas de forma fluida y sin ningun error.
+Pero si en las ramas que fusionamos con git merge hay cambios que se "contradicen" de una rama a otra, eso se llama conflicto.
+
+Imaginemos que hacemos cambios en la rama master a una línea de código en HTML y otra en CSS.
+Ahora en la rama cabecera hago modificaciones en las mismas líneas de código que en master.
+
+Al querer fusionar ambas ramas con git merge, esa contradicción genera un conflicto, y la fusión no se completa.
+En nuestros editores de código o en los archivos nos aparecen los conflictos encontrados y sugerencias para solucionarlos.
+Una vez resueltos hay que hacer un commit.
+
+Los conflictos son muy comunes y son el pan de cada día cuando trabajamos más de una persona en los mismos archivos.
+Por eso es que Git es tan útil.
+
+Lo importante es la comunicación, hablar sobre el conflicto con el equipo de trabajo y decidir qué código se queda y qué código se omite al resolver el conflicto.
