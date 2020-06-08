@@ -103,3 +103,60 @@ Los conflictos son muy comunes y son el pan de cada día cuando trabajamos más 
 Por eso es que Git es tan útil.
 
 Lo importante es la comunicación, hablar sobre el conflicto con el equipo de trabajo y decidir qué código se queda y qué código se omite al resolver el conflicto.
+
+**Uso de Github**
+Git con esteroides. Es un superservidor donde podemos subir nuestro repositorio local y descargar archivos del repositorio remoto.
+
+Lo primero que vamos a hacer es registrarnos en Github con nuestro correo electrónico, contraseña y usuario.
+
+Una vez en Github creamos un nuevo repositorio. 
+Le damos un nombre y descripción a nuestro repositorio.
+Buenas prácticas: Iniciar nuestro repositorio con un README.md.
+Las demás opciones las veremos en clases futuras.
+Licencias o gitignore, para después.
+
+--¿Cómo clonar un repositorio de Github a nuestro equipo local?--
+Tenemos la opción de Clone or download, al darle clic copiames la url de nuestro repositorio.
+
+git remote add origin https://github.com/umoari/hyperblog.git
+Con este comando ya tenemos un origen remoto de nuestro repositorio de Git.
+
+git remote
+Nos muestra la palabra origin, eso quiere decir que ese origin existe en nuestro repositorio de Git.
+
+git remote -v
+Nos muuestra lo siguiente
+origin https://github.com/umoari/hyperblog.git (fetch)
+origin https://github.com/umoari/hyperblog.git (push)
+
+Esto quiere decir que a origin podemos hacer fetch, traer y push enviar. Listo.
+
+git push origin master
+Con esto, estamos diciendo que vamos a enviar (push) a origin nuestra rama master.
+Nos va a aparecer una pequeña ventana para ingresar nuestras credenciales de Github.
+Nos va a dar errores: en pocas palabras es que los archivos del repositorio remoto no están en nuestro repositorio local.
+
+git pull origin master
+Así que hagamos pull.
+Con esto nos traemos los archivos de nuestro repositorio remoto.
+Aunque tenemos un error, que porque tenemos archivos diferentes, git no permite que se fusionen tales historias.
+
+git pull origin master --allow-unrelated-histories
+Con esto, estamos forzando y permitimos fusionar el historial remoto a nuestro repositorio local.
+Nos manda a VIM y guardamos con Shift Esc z z.
+
+git push origin master
+Ahora ya podemos enviar nuestro master local a nuestro repositorio de Github.
+Ya podemos revisar el historial de comits con Blame.
+Los cambios aparecen con el usuario vinculado al correo electrónico que registramos en Git.
+
+En git ya podemos modificar archivos y agregar commits.
+¿Cómo nos traemos esos cambios a nuestro repositorio local?
+git pull origin master
+
+git remote add origin https://github.com/umoari/hyperblog.git (Se trae ese origin a nuestra base de datos)
+git remote (visualizar que nuestro origin existe)
+git remote -v (visualizar los verbos que podemos usar con origin: push y pull)
+git push origin master (enviar repositorio local a origin a la rama designada)
+git pull origin master (traer repositorio origin a nuestro repositorio local a la rama designada)
+git pull origin master --allow-unrelated-histories (lo mismo que la anterior, pero forzando unión de historias no relacionadas)
